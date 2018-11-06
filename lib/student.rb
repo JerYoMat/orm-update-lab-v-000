@@ -60,7 +60,7 @@ class Student
 
   def self.new_from_db(row)
     sql = <<-SQL
-    SELECT * from students where id - ?
+    SELECT * from students where id = ?
     SQL
     t=DB[:conn].execute(sql, row)
   end 
