@@ -59,12 +59,8 @@ class Student
   end 
 
   def self.new_from_db(row)
-    binding.pry 
-    sql = <<-SQL
-    SELECT * from students where id = ?
-    SQL
-    DB[:conn].execute(sql, self.name, self.grade, self.id)
-    binding.pry 
+     Student.new(row[0], row[1], row[2])
+   
   end 
 
 end 
