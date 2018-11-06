@@ -32,7 +32,7 @@ class Student
     if self.id 
       self.update 
     else 
-      self.save 
+      self.save_new  
     end 
   end 
   
