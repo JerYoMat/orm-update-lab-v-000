@@ -29,7 +29,7 @@ class Student
 
 
   def save 
-    if self.id 
+    if self.id != nil 
       self.update 
     else 
       self.save_new  
