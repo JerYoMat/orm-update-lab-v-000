@@ -37,7 +37,7 @@ def save_new
     SQL
  
     DB[:conn].execute(sql, self.name, self.grade)
- 
+    @id = 
 end 
 
 def update
