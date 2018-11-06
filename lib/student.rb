@@ -29,10 +29,11 @@ class Student
 
 
   def self.save 
-  if self.id 
-    self.update 
-  else 
-    self.save 
+    if self.id 
+      self.update 
+    else 
+      self.save 
+    end 
   end 
   
   def self.save_new
