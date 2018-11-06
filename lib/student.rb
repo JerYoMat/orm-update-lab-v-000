@@ -17,8 +17,6 @@ class Student
         name TEXT, 
         grade INTEGER)
         SQL
-      
-        
     DB[:conn].execute(sql)
   end 
 
@@ -33,6 +31,7 @@ end
 
 
 def save_new
+   
 end 
 
 def update
