@@ -57,4 +57,10 @@ class Student
     new_guy.save 
   end 
 
+  def self.new_from_db(row)
+    sql = <<-SQL
+    something 
+    SQL 
+  end 
+
 end 
