@@ -67,8 +67,8 @@ class Student
     SELECT * from students where name = ?
     SQL
     
-    t = DB[:conn].execute(sql, name).first 
-     
+    data = DB[:conn].execute(sql, name).first 
+    self.new_from_db(data)
   end 
 
 end 
