@@ -63,6 +63,7 @@ class Student
     SELECT * from students where id = ?
     SQL
     t=DB[:conn].execute(sql, row)
+    binding.pry 
   end 
 
 end 
