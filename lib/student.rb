@@ -27,7 +27,7 @@ class Student
     DB[:conn].execute(sql)
   end 
 
-end
+
 
   
   def save_new
