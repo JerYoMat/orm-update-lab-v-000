@@ -67,8 +67,8 @@ class Student
     SELECT * from students where name = ?
     SQL
     
-    t = DB[:conn].execute(sql, name)
-    binding.pry 
+    t = DB[:conn].execute(sql, name).first 
+     
   end 
 
 end 
